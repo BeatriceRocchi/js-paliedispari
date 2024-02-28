@@ -9,16 +9,10 @@ btn.addEventListener("click", function () {
 
 //FUNCTION
 function checkPalindrome(wordString) {
-  const wordArray = wordString.split("");
-  console.log(wordArray);
-  console.log(wordArray.length);
-
-  for (let i = 0; i < wordArray.length / 2; i++) {
-    let isPalindrome;
-
-    if (wordArray[i] !== wordArray[wordArray.length - 1 - i]) {
-      return (isPalindrome = false);
+  for (let i = 0; i < wordString.length / 2; i++) {
+    if (wordString[i] !== wordString[wordString.length - 1 - i]) {
+      return false;
     }
   }
-  return (isPalindrome = true);
+  return true;
 }
