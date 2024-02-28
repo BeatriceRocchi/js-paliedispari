@@ -3,6 +3,13 @@
 Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma.
 
 ## Svolgimento
+1. Chiedere con un input all'utente di inserire una parola e salvarla in una variabile
+2. Creare una funzione che ha come parametro la stringa inserita dall'utente, verifica se la parola è palindroma e restituisce true o false
+3. Nella funzione:
+    - Creare un array avente per elementi le singole lettere della parola
+    - Con un ciclo for, confrontare il primo elemento (indice = 0) con l'ultimo (indice = lunghezza array - 1), poi il secondo con il penultimo, etc.
+    - Se gli elementi confrontati sono uguali, procedere con i controlli fino a che non arrivo a metà dell'array e restituire true, altrimenti se gli elementi confrontati sono diversi restituire false
+4. Stampare in pagina se la parola è palindroma o non è palindroma
 
 # Pari e Dispari
 
