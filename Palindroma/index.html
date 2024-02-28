@@ -22,11 +22,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>La parola è palindroma?</h2>
-    <label for="word">Inserisci una parola:</label>
-    <input type="text" id="word" placeholder="es. parola" />
-    <button>Verifica</button>
-    <div class="output"></div>
+    <div class="container_custom">
+      <div class="text_box text-center h-50">
+        <h2 class="mb-4">La parola è palindroma?</h2>
+        <label for="word">Inserisci una parola:</label>
+        <input
+          type="text"
+          id="word"
+          name="word"
+          minlength="2"
+          placeholder="es. parola"
+          required
+        />
+
+        <div>
+          <button class="btn btn-light my-4" type="submit">Verifica</button>
+        </div>
+
+        <div class="output fs-4 fw-semibold"></div>
+      </div>
+    </div>
+
     <!-- JS -->
     <script src="./script.js"></script>
   </body>

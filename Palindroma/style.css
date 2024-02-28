@@ -1,0 +1,13 @@
+.container_custom {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_box {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
