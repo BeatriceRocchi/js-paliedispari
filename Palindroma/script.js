@@ -16,11 +16,9 @@ function checkPalindrome(wordString) {
   for (let i = 0; i < wordArray.length / 2; i++) {
     let isPalindrome;
 
-    if (wordArray[i] === wordArray[wordArray.length - 1 - i]) {
-      isPalindrome = true;
-    } else {
+    if (wordArray[i] !== wordArray[wordArray.length - 1 - i]) {
       return (isPalindrome = false);
     }
-    return isPalindrome;
   }
+  return (isPalindrome = true);
 }
