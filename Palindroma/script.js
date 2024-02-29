@@ -2,7 +2,7 @@ const inputWord = document.getElementById("word");
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", function () {
-  document.querySelector(".output").innerHTML = checkPalindrome(inputWord.value)
+  document.querySelector(".output").innerHTML = checkPalindrome(inputWord.value.toLowerCase())
     ? "La parola è palindroma"
     : "La parola non è palindroma";
 });

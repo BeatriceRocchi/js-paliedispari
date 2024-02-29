@@ -6,9 +6,6 @@ btn.addEventListener("click", function () {
     .getElementById("even-odd-input")
     .value.toLowerCase();
 
-  console.log(evenOddUser);
-  console.log(numberUser);
-
   if (evenOddUser !== "pari" && evenOddUser !== "dispari") {
     alert("Attenzione! Devi inserire 'pari' o 'dispari");
   } else if (numberUser < 1 || numberUser > 5 || isNaN(numberUser)) {
